@@ -68,10 +68,10 @@ const Hero = () => {
                         <div className="profile-frame">
                             <img
                                 src={profileImage}
-                                alt="Mohd Suhaib Khan"
+                                alt="Suhaib Khan"
                                 className="profile-photo"
                             />
-                            <h3 className="profile-name">Mohd Suhaib Khan</h3>
+                            <h3 className="profile-name">Suhaib Khan</h3>
                             <p className="profile-role">AI Frontend Developer @ Fletchers</p>
                         </div>
                     </div>
