@@ -1419,12 +1419,57 @@ section {
     grid-template-columns: 1fr;
   }
 
-  .experience-timeline {
-    padding-left: 1.5rem;
+  /* Experience mobile fixes */
+  .experience-card {
+    padding: 1.5rem;
   }
 
-  .experience-content {
-    padding: 1.5rem;
+  .experience-card-header {
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .company-name {
+    font-size: 1.25rem;
+  }
+
+  .company-duration {
+    align-self: flex-start;
+  }
+
+  .position-item {
+    gap: 1rem;
+  }
+
+  .position-marker {
+    display: none;
+  }
+
+  .position-content {
+    padding-bottom: 1.5rem;
+    padding-left: 0;
+    border-left: 3px solid var(--accent-primary);
+    padding-left: 1rem;
+  }
+
+  .position-item:last-child .position-content {
+    border-left-color: var(--accent-secondary);
+  }
+
+  .position-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .position-role {
+    font-size: 1rem;
+  }
+
+  .position-description {
+    font-size: 0.9rem;
   }
 
   .about-grid {
