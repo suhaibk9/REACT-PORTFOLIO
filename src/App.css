@@ -1,6 +1,5 @@
-/* App.css - Additional component-specific styles */
 
-/* Smooth reveal animations with staggered delays */
+
 .fade-in:nth-child(1) {
   transition-delay: 0s;
 }
@@ -17,7 +16,6 @@
   transition-delay: 0.3s;
 }
 
-/* Enhanced hover effects for cards */
 .experience-content,
 .project-card,
 .education-card,
@@ -45,12 +43,10 @@
   opacity: 0.03;
 }
 
-/* Typing cursor effect for hero */
 .hero-title .gradient-text {
   position: relative;
 }
 
-/* Smooth scrollbar styling */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -68,19 +64,16 @@
   background: var(--accent-primary);
 }
 
-/* Selection styling */
 ::selection {
   background: rgba(102, 126, 234, 0.3);
   color: white;
 }
 
-/* Focus visible states for accessibility */
 :focus-visible {
   outline: 2px solid var(--accent-primary);
   outline-offset: 2px;
 }
 
-/* Button ripple effect */
 .btn {
   position: relative;
   overflow: hidden;
@@ -104,9 +97,6 @@
   height: 300px;
 }
 
-/* Text shimmer effect removed for better light mode compatibility */
-
-/* Floating animation for profile card elements */
 .profile-avatar {
   animation: float 6s ease-in-out infinite;
 }
@@ -123,12 +113,10 @@
   }
 }
 
-/* Parallax-like effect on scroll */
 .hero {
   perspective: 1000px;
 }
 
-/* Skill tag hover glow */
 .skill-tag {
   position: relative;
 }
@@ -149,7 +137,6 @@
   opacity: 0.5;
 }
 
-/* Project card image gradient overlay animation */
 .project-image {
   position: relative;
 }
@@ -169,18 +156,15 @@
   opacity: 1;
 }
 
-/* Navigation links underline animation */
 .nav-links a {
   overflow: hidden;
 }
 
-/* Contact form input focus glow */
 .form-group input:focus,
 .form-group textarea:focus {
   background: rgba(102, 126, 234, 0.05);
 }
 
-/* Social links rotation effect */
 .social-link {
   font-weight: 700;
   font-family: var(--font-display);
@@ -206,13 +190,11 @@
   }
 }
 
-/* Loading state for form */
 .btn[disabled] {
   opacity: 0.7;
   cursor: not-allowed;
 }
 
-/* Experience timeline dot pulse */
 .experience-dot {
   animation: dotPulse 2s ease-in-out infinite;
 }
@@ -229,7 +211,6 @@
   }
 }
 
-/* Hero badge entrance animation */
 .hero-badge {
   animation: badgeSlide 1s ease 0.2s both;
 }
@@ -246,7 +227,6 @@
   }
 }
 
-/* CTA buttons entrance animation */
 .hero-cta .btn:nth-child(1) {
   animation: fadeInUp 1s ease 0.7s both;
 }
@@ -255,7 +235,6 @@
   animation: fadeInUp 1s ease 0.9s both;
 }
 
-/* Mobile menu animation */
 .mobile-menu-btn.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
@@ -268,7 +247,6 @@
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Stats counter animation */
 .stat-value {
   display: inline-block;
   animation: countUp 1s ease 1s both;
@@ -286,7 +264,6 @@
   }
 }
 
-/* Contact method hover effect */
 .contact-method {
   padding: 0.75rem;
   border-radius: 12px;
@@ -297,7 +274,6 @@
   background: var(--glass-bg);
 }
 
-/* Page load animation */
 @keyframes pageLoad {
   from {
     opacity: 0;
@@ -312,7 +288,6 @@
   animation: pageLoad 0.5s ease;
 }
 
-/* Reduce motion for accessibility */
 @media (prefers-reduced-motion: reduce) {
 
   *,

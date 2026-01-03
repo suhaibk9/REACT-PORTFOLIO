@@ -1,4 +1,3 @@
-/* ===== CSS RESET & ROOT VARIABLES ===== */
 *,
 *::before,
 *::after {
@@ -8,13 +7,11 @@
 }
 
 :root {
-  /* Premium Color Palette */
   --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
   --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
   --dark-gradient: linear-gradient(135deg, #0c0c1e 0%, #1a1a3e 50%, #0c0c1e 100%);
 
-  /* Base Colors */
   --bg-primary: #0a0a1a;
   --bg-secondary: #12122a;
   --bg-tertiary: #1a1a3e;
@@ -25,29 +22,23 @@
   --accent-secondary: #764ba2;
   --accent-glow: rgba(102, 126, 234, 0.4);
 
-  /* Glassmorphism */
   --glass-bg: rgba(255, 255, 255, 0.05);
   --glass-border: rgba(255, 255, 255, 0.1);
   --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 
-  /* Typography */
   --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-display: 'Outfit', 'Inter', sans-serif;
 
-  /* Spacing */
-  --section-padding: clamp(4rem, 10vw, 8rem);
+  --section-padding: clamp(3rem, 6vw, 5rem);
   --container-max: 1200px;
 
-  /* Transitions */
   --transition-fast: 0.2s ease;
   --transition-medium: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ===== GOOGLE FONTS ===== */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap');
 
-/* ===== BASE STYLES ===== */
 html {
   scroll-behavior: smooth;
 }
@@ -61,7 +52,6 @@ body {
   min-height: 100vh;
 }
 
-/* ===== ANIMATED BACKGROUND ===== */
 .animated-bg {
   position: fixed;
   top: 0;
@@ -102,7 +92,6 @@ body {
   }
 }
 
-/* Floating Orbs */
 .orb {
   position: absolute;
   border-radius: 50%;
@@ -158,7 +147,6 @@ body {
   }
 }
 
-/* ===== NAVIGATION ===== */
 .navbar {
   position: fixed;
   top: 0;
@@ -268,13 +256,12 @@ body {
   transition: var(--transition-fast);
 }
 
-/* ===== HERO SECTION ===== */
 .hero {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 6rem 2rem 4rem;
+  padding: 6rem 2rem 2rem;
   position: relative;
 }
 
@@ -538,7 +525,6 @@ body {
   letter-spacing: 0.1em;
 }
 
-/* ===== SECTION STYLES ===== */
 section {
   padding: var(--section-padding) 2rem;
   position: relative;
@@ -583,9 +569,10 @@ section {
   margin: 0 auto;
 }
 
-/* ===== ABOUT SECTION ===== */
 .about {
   background: linear-gradient(180deg, transparent 0%, var(--bg-secondary) 50%, transparent 100%);
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 
 .about-grid {
@@ -645,7 +632,6 @@ section {
   font-size: 0.9rem;
 }
 
-/* Skills Section */
 .skills-container {
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
@@ -694,7 +680,6 @@ section {
   transform: translateY(-2px);
 }
 
-/* ===== EXPERIENCE SECTION ===== */
 .experience-list {
   display: flex;
   flex-direction: column;
@@ -747,7 +732,6 @@ section {
   font-weight: 500;
 }
 
-/* Internal Positions Timeline */
 .positions-timeline {
   display: flex;
   flex-direction: column;
@@ -837,12 +821,10 @@ section {
   color: var(--text-muted);
 }
 
-/* ===== PROJECTS SECTION ===== */
 .projects {
   background: linear-gradient(180deg, transparent 0%, var(--bg-secondary) 50%, transparent 100%);
 }
 
-/* Projects container override for full width */
 .projects .section-container {
   max-width: 1600px;
 }
@@ -969,7 +951,6 @@ section {
   border-color: var(--accent-primary);
 }
 
-/* ===== EDUCATION SECTION ===== */
 .education-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -1047,7 +1028,6 @@ section {
   margin-top: 0.5rem;
 }
 
-/* ===== CONTACT SECTION ===== */
 .contact {
   background: linear-gradient(180deg, transparent 0%, var(--bg-secondary) 100%);
 }
@@ -1216,7 +1196,6 @@ section {
   margin-top: 0.5rem;
 }
 
-/* Form Success State */
 .form-success {
   display: flex;
   flex-direction: column;
@@ -1264,7 +1243,6 @@ section {
   max-width: 300px;
 }
 
-/* Form Error State */
 .form-error {
   display: flex;
   align-items: center;
@@ -1278,7 +1256,6 @@ section {
   margin-bottom: 1rem;
 }
 
-/* Loading Spinner */
 .spinner {
   width: 18px;
   height: 18px;
@@ -1299,7 +1276,6 @@ section {
   cursor: not-allowed;
 }
 
-/* ===== FOOTER ===== */
 .footer {
   padding: 3rem 2rem;
   border-top: 1px solid var(--glass-border);
@@ -1324,7 +1300,6 @@ section {
   font-weight: 600;
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 1024px) {
   .hero-container {
     grid-template-columns: 1fr;
@@ -1419,7 +1394,6 @@ section {
     grid-template-columns: 1fr;
   }
 
-  /* Experience mobile fixes */
   .experience-card {
     padding: 1.5rem;
   }
@@ -1584,7 +1558,6 @@ section {
   }
 }
 
-/* ===== ANIMATIONS ON SCROLL ===== */
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
@@ -1596,7 +1569,6 @@ section {
   transform: translateY(0);
 }
 
-/* ===== UTILITY CLASSES ===== */
 .text-gradient {
   background: var(--primary-gradient);
   -webkit-background-clip: text;
@@ -1604,7 +1576,6 @@ section {
   background-clip: text;
 }
 
-/* ===== LIGHT MODE ===== */
 [data-theme="light"] {
   --bg-primary: #f8fafc;
   --bg-secondary: #f1f5f9;
@@ -1672,7 +1643,6 @@ section {
   color: rgba(15, 23, 42, 0.4);
 }
 
-/* ===== THEME TOGGLE ===== */
 .theme-toggle {
   display: flex;
   align-items: center;
@@ -1698,7 +1668,6 @@ section {
   transition: var(--transition-medium);
 }
 
-/* ===== RESUME BUTTON ===== */
 .nav-resume {
   display: inline-flex;
   align-items: center;
@@ -1725,7 +1694,6 @@ section {
   flex-shrink: 0;
 }
 
-/* ===== HERO SOCIAL LINKS ===== */
 .hero-social {
   display: flex;
   gap: 1rem;
@@ -1757,7 +1725,6 @@ section {
   transition: var(--transition-medium);
 }
 
-/* ===== NAV LINKS ALIGNMENT ===== */
 .nav-links {
   align-items: center;
 }
@@ -1767,7 +1734,6 @@ section {
   align-items: center;
 }
 
-/* ===== MOBILE RESPONSIVE FOR NEW ELEMENTS ===== */
 @media (max-width: 768px) {
   .theme-toggle {
     width: 36px;
