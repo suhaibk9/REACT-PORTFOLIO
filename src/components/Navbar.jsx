@@ -34,7 +34,7 @@ const Navbar = () => {
                     <li><a href="#education" onClick={(e) => scrollToSection(e, '#education')}>Education</a></li>
                     <li>
                         <a
-                            href="https://drive.google.com/file/d/1eX5uRLQjcVxwj1VFv0hfI-CNBI-XGSM7/view?usp=sharing"
+                            href="https://drive.google.com/file/d/1RUy-lpcu7IhzhQ3wNUkL-vdL1acNfyse/view?usp=sharing"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="nav-resume"
