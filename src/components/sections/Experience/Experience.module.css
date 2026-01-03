@@ -1,0 +1,21 @@
+.experience {
+    padding: 6rem 2rem;
+    position: relative;
+}
+
+.container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media (max-width: 640px) {
+    .experience {
+        padding: 4rem 1rem;
+    }
+}
