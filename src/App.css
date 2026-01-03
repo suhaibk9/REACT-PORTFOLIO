@@ -1,0 +1,325 @@
+/* App.css - Additional component-specific styles */
+
+/* Smooth reveal animations with staggered delays */
+.fade-in:nth-child(1) {
+  transition-delay: 0s;
+}
+
+.fade-in:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.fade-in:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.fade-in:nth-child(4) {
+  transition-delay: 0.3s;
+}
+
+/* Enhanced hover effects for cards */
+.experience-content,
+.project-card,
+.education-card,
+.highlight-card {
+  position: relative;
+  z-index: 1;
+}
+
+.experience-content::before,
+.project-card::before,
+.education-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: var(--primary-gradient);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: -1;
+}
+
+.experience-content:hover::before,
+.project-card:hover::before,
+.education-card:hover::before {
+  opacity: 0.03;
+}
+
+/* Typing cursor effect for hero */
+.hero-title .gradient-text {
+  position: relative;
+}
+
+/* Smooth scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-tertiary);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-primary);
+}
+
+/* Selection styling */
+::selection {
+  background: rgba(102, 126, 234, 0.3);
+  color: white;
+}
+
+/* Focus visible states for accessibility */
+:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 2px;
+}
+
+/* Button ripple effect */
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+.btn:active::before {
+  width: 300px;
+  height: 300px;
+}
+
+/* Text shimmer effect removed for better light mode compatibility */
+
+/* Floating animation for profile card elements */
+.profile-avatar {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Parallax-like effect on scroll */
+.hero {
+  perspective: 1000px;
+}
+
+/* Skill tag hover glow */
+.skill-tag {
+  position: relative;
+}
+
+.skill-tag::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  background: var(--primary-gradient);
+  border-radius: inherit;
+  opacity: 0;
+  z-index: -1;
+  filter: blur(8px);
+  transition: opacity 0.3s ease;
+}
+
+.skill-tag:hover::before {
+  opacity: 0.5;
+}
+
+/* Project card image gradient overlay animation */
+.project-image {
+  position: relative;
+}
+
+.project-image::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(45deg,
+      rgba(102, 126, 234, 0.1) 0%,
+      rgba(118, 75, 162, 0.1) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.project-card:hover .project-image::before {
+  opacity: 1;
+}
+
+/* Navigation links underline animation */
+.nav-links a {
+  overflow: hidden;
+}
+
+/* Contact form input focus glow */
+.form-group input:focus,
+.form-group textarea:focus {
+  background: rgba(102, 126, 234, 0.05);
+}
+
+/* Social links rotation effect */
+.social-link {
+  font-weight: 700;
+  font-family: var(--font-display);
+}
+
+.social-link:hover {
+  animation: wiggle 0.5s ease;
+}
+
+@keyframes wiggle {
+
+  0%,
+  100% {
+    transform: rotate(0deg) translateY(-3px);
+  }
+
+  25% {
+    transform: rotate(-5deg) translateY(-3px);
+  }
+
+  75% {
+    transform: rotate(5deg) translateY(-3px);
+  }
+}
+
+/* Loading state for form */
+.btn[disabled] {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Experience timeline dot pulse */
+.experience-dot {
+  animation: dotPulse 2s ease-in-out infinite;
+}
+
+@keyframes dotPulse {
+
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(102, 126, 234, 0.4);
+  }
+
+  50% {
+    box-shadow: 0 0 0 8px rgba(102, 126, 234, 0);
+  }
+}
+
+/* Hero badge entrance animation */
+.hero-badge {
+  animation: badgeSlide 1s ease 0.2s both;
+}
+
+@keyframes badgeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* CTA buttons entrance animation */
+.hero-cta .btn:nth-child(1) {
+  animation: fadeInUp 1s ease 0.7s both;
+}
+
+.hero-cta .btn:nth-child(2) {
+  animation: fadeInUp 1s ease 0.9s both;
+}
+
+/* Mobile menu animation */
+.mobile-menu-btn.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.mobile-menu-btn.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-btn.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Stats counter animation */
+.stat-value {
+  display: inline-block;
+  animation: countUp 1s ease 1s both;
+}
+
+@keyframes countUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Contact method hover effect */
+.contact-method {
+  padding: 0.75rem;
+  border-radius: 12px;
+  margin: -0.75rem;
+}
+
+.contact-method:hover {
+  background: var(--glass-bg);
+}
+
+/* Page load animation */
+@keyframes pageLoad {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+#root {
+  animation: pageLoad 0.5s ease;
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
