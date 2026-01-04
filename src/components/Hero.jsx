@@ -20,7 +20,7 @@ const Hero = () => {
                     <h1 className="hero-title">
                         Hi, I'm <span className="gradient-text">Suhaib Khan</span>
                     </h1>
-                    <p className="hero-subtitle">Senior Frontend Engineer • React & TypeScript Specialist</p>
+                    <p className="hero-subtitle">Frontend Engineer • React & TypeScript Specialist</p>
                     <p className="hero-description">
                         I craft high-performance, production-ready web applications with a focus on
                         exceptional user experiences, scalable architecture, and clean code. Currently

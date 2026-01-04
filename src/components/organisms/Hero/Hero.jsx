@@ -1,4 +1,4 @@
-import profileImage from '../../../assets/3FB082AD-7EF4-4855-B961-CB8F4F58631E.png'
+import profileImage from '../../../assets/Avatar.png'
 import { Badge, Button } from '../../atoms'
 import { SocialLinks } from '../../molecules'
 import styles from './Hero.module.css'
@@ -25,7 +25,7 @@ const Hero = () => {
                     </h1>
 
                     <p className={styles.subtitle}>
-                        Senior Frontend Engineer • React & TypeScript Specialist
+                        Frontend Engineer • React & TypeScript Specialist
                     </p>
 
                     <p className={styles.description}>
