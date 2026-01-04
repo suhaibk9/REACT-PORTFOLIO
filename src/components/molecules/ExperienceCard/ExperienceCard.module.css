@@ -141,13 +141,7 @@
         gap: 1rem;
     }
 
-    .marker {
-        display: none;
-    }
-
     .content {
-        border-left: 2px solid var(--accent-primary);
-        padding-left: 1rem;
         padding-bottom: 1.25rem;
     }
 

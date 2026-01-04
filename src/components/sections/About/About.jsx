@@ -4,7 +4,7 @@ import styles from './About.module.css'
 const skillsData = [
     {
         title: 'Frontend',
-        skills: ['React.js', 'TypeScript', 'JavaScript', 'Redux Toolkit', 'RTK Query', 'HTML5', 'CSS3', 'Tailwind CSS', 'Material UI']
+        skills: ['React.js', 'TypeScript', 'JavaScript', 'Redux Toolkit', 'RTK Query', 'React Query', 'HTML5', 'CSS3', 'Tailwind CSS', 'Material UI']
     },
     {
         title: 'Backend & APIs',
