@@ -11,12 +11,8 @@ const skillsData = [
         skills: ['Node.js', 'Fastify', 'REST API', 'GraphQL']
     },
     {
-        title: 'Cloud & DevOps',
-        skills: ['Azure Blob Storage', 'Azure DevOps', 'Docker', 'Git']
-    },
-    {
         title: 'Databases & Tools',
-        skills: ['MongoDB', 'MySQL', 'Redis', 'Sentry', 'Zod', 'RabbitMQ']
+        skills: ['MongoDB', 'MySQL', 'Redis', 'Sentry', 'Zod', 'RabbitMQ', 'Git']
     }
 ]
 
