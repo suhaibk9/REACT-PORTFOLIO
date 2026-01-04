@@ -167,30 +167,36 @@
 @media (max-width: 900px) {
     .mobileBtn {
         display: flex;
+        touch-action: manipulation;
+        -webkit-tap-highlight-color: transparent;
     }
 
     .links {
         position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+        inset: 0;
+        width: 100vw;
+        height: 100vh;
+        height: 100dvh;
         background: var(--bg-primary);
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 2rem;
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.3s ease;
+        gap: 1.5rem;
+        z-index: 999;
+        transform: translateX(100%);
+        transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        overflow: hidden;
+        padding: 2rem;
+        box-sizing: border-box;
     }
 
     .links.active {
-        opacity: 1;
-        visibility: visible;
+        transform: translateX(0);
     }
 
     .links a {
         font-size: 1.25rem;
+        touch-action: manipulation;
+        -webkit-tap-highlight-color: transparent;
     }
 }
