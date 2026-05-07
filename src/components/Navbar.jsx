@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useTheme } from '../context/ThemeContext'
+import { RESUME_URL } from '../constants'
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false)
@@ -34,7 +35,7 @@ const Navbar = () => {
                     <li><a href="#education" onClick={(e) => scrollToSection(e, '#education')}>Education</a></li>
                     <li>
                         <a
-                            href="https://drive.google.com/file/d/1Sp112nOpNdadMelRubc6f1-a7v6ZfCCY/view?usp=sharing"
+                            href={RESUME_URL}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="nav-resume"

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useTheme } from '../../../context/ThemeContext'
 import { Icon } from '../../atoms'
+import { RESUME_URL } from '../../../constants'
 import styles from './Navbar.module.css'
 
 const navLinks = [
@@ -64,7 +65,7 @@ const Navbar = () => {
 
                     <li>
                         <a
-                            href="https://drive.google.com/file/d/1RUy-lpcu7IhzhQ3wNUkL-vdL1acNfyse/view?usp=sharing"
+                            href={RESUME_URL}
                             target="_blank"
                             rel="noopener noreferrer"
                             className={styles.resume}
