@@ -31,6 +31,9 @@
     --transition-fast: 0.2s ease;
     --transition-medium: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Mouse Glow Color - Dark Theme */
+    --mouse-glow-color: rgba(102, 126, 234, 0.35);
 }
 
 /* Light Theme Override */
@@ -42,4 +45,7 @@
     --text-muted: rgba(30, 41, 59, 0.6);
     --glass-bg: rgba(255, 255, 255, 0.8);
     --glass-border: rgba(0, 0, 0, 0.1);
+
+    /* Mouse Glow Color - Light Theme */
+    --mouse-glow-color: rgba(102, 126, 234, 0.22);
 }
